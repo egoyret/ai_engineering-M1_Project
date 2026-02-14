@@ -1,0 +1,25 @@
+{
+  "metrics": {
+    "model": "gpt-5-mini",
+    "temperature": 2e-05,
+    "prompt_tokens": 966,
+    "completion_tokens": 1762,
+    "total_tokens": 2728,
+    "estimated_cost_usd": 0.0038,
+    "latency_seconds": 16.73,
+    "timestamp": "2026-02-14T17:50:19.873110",
+    "context": "SoporteCliente",
+    "output_path": "/Users/enriquegoyret/HenryCourses/ai_m1_project/LOGS"
+  },
+  "consulta": "Que productos de inversion tiene para ofrecer ?",
+  "respuesta": {
+    "respuesta": "Los productos de inversi\u00f3n disponibles en la base son principalmente Plazos Fijos. Detalles: Plazo Fijo \u2014 monto m\u00ednimo $10.000, plazo m\u00ednimo 30 d\u00edas, Tasa nominal anual 38%, cancelaci\u00f3n anticipada no permitida. Adicionalmente, para administraci\u00f3n de fondos est\u00e1n la Caja de Ahorro (sin costo, incluye tarjeta de d\u00e9bito, permite transferencias ilimitadas) y la Cuenta Corriente (comisi\u00f3n $8.000, permite descubierto seg\u00fan perfil). Si consulta por otros productos de inversi\u00f3n, esa informaci\u00f3n no est\u00e1 disponible en la base.",
+    "indicador_de_confianza": 0.9,
+    "acciones_recomendadas": [
+      "Informar al cliente las condiciones del Plazo Fijo: monto m\u00ednimo $10.000, plazo m\u00ednimo 30 d\u00edas, TNA 38%, sin cancelaci\u00f3n anticipada.",
+      "Si el cliente desea, explicar caracter\u00edsticas de la Caja de Ahorro: sin costo, incluye tarjeta de d\u00e9bito, transferencias ilimitadas.",
+      "Informar sobre la Cuenta Corriente si corresponde: comisi\u00f3n $8.000 y posibilidad de descubierto seg\u00fan perfil.",
+      "Si el cliente solicita otros productos de inversi\u00f3n no mencionados aqu\u00ed, indicar que la informaci\u00f3n no est\u00e1 disponible en la base y derivar a Atenci\u00f3n al Cliente (tel. horario 8 a 20 hs)."
+    ]
+  }
+}

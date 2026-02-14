@@ -1,4 +1,6 @@
 BANK_KB = """
+BASE DE CONOCIMIENTO
+
 1️⃣ Transferencias Nacionales
 
 - Se acreditan en el mismo día hábil.
@@ -57,7 +59,7 @@ BANK_KB = """
 
 🔟 Cuenta Corriente
 
-- Comisión mensual: $8.000.
+- Comisión de cuenta corriente: $8.000.
 - Permite descubierto según perfil.
 - Chequera opcional con costo adicional.
 
