@@ -1,3 +1,37 @@
+"""
+Este script es para probar un asistente para agentes de soporte al cliente de un banco ejemplo.
+
+Para ello le proporcionamos un knowledge base (bank_kb) que contiene información sobre los productos,
+servicios, y políticas del banco.
+
+Tenemos definido un system prompt (BANK_ASSISTANT_SYSTEM_PROMPT) que le explica al modelo el role que debe cumplir, l
+a estructura del output que debe producir, y como debe responder si no encuentra la respuesta.
+
+Adicionalmente hay preparado un one-shot con un ejemplo, que se puede agregar al system prompt para analizar
+su comportamiento.
+
+El script, a traves de un input, pide al usuario que ingrese su consulta. Puede tipear un texto libre o puede
+digitar un numero para elegir entre las opciones pre-cargadas.
+
+El script ejecuta y devuelve en la consola la respuesta y unas metricas basicas. Ademas graba un json con las metricas
+completas, la consulta, y la respuesta mas completa. También se infoma sobre la ubicación del archivo de output.
+
+El archivo de output esta nombrado con un timestamp de mode de tener versionadas la ejecuciones para poder comparar
+los resultados bajo distintas condiciones.
+
+Los pasos del script son los siguientes:
+
+0. Ingresar consulta al usuario
+1. Cargar variables de entorno
+2. Seleccionar el modelo a utilizar
+3. Inicializar el cliente de OpenAI
+4. Establecer el system_prompt a utilizar
+5. Selecciona la consulta a utilizar
+6. Enviar consulta al modelo
+7. Imprime y graba el resultado
+
+"""
+
 import time
 import json
 import os
@@ -7,12 +41,10 @@ from openai import OpenAI
 from dotenv import load_dotenv
 from logger import get_logger
 from enum import Enum
-from IPython.display import display, Markdown
-from prompts import BANK_ASSISTANT_SYSTEM_PROMPT
-from data.bank_kb import BANK_KB
+from prompts import BANK_ASSISTANT_SYSTEM_PROMPT, ONE_SHOT_EXAMPLE
+from bank_kb import BANK_KB
 from dataclasses import asdict
-from metrics import Metrics, calculate_cost, log_metrics, print_metrics_summary
-
+from metrics import Metrics, calculate_cost
 
 # Obtener el root del proyecto
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
@@ -43,7 +75,7 @@ def get_completion(system_prompt: str, # Define el comportamiento del modelo
         response = client.chat.completions.create(
             model=model,
             messages=messages,
-            temperature=None, # Controla la creatividad de las respuestas
+            temperature=temperature,
         )
         latency = (time.time() - start_time)
         content = response.choices[0].message.content
@@ -77,13 +109,13 @@ def get_completion(system_prompt: str, # Define el comportamiento del modelo
             "acciones_recomendadas": parsed["acciones_recomendadas"],
                }, metrics
 
-
-        # return response.choices[0].message.content # DEvuelve solo el cuerpo de la respuesta , no toda la metadata
     except Exception as e:
         return f"An error occurred: {e}"
 
 
 def main() -> None:
+
+    input_query = input("Ingrese la consulta: ")
 
     # Cargo variables de entorno
     load_dotenv()
@@ -96,16 +128,27 @@ def main() -> None:
     # Inicializo el cliente de OpenAI
     client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-    system_prompt = BANK_ASSISTANT_SYSTEM_PROMPT + "\n\n" + BANK_KB
+    # Establecer el system_prompt a utilizar
+    basic_system_prompt = BANK_ASSISTANT_SYSTEM_PROMPT
+    one_shot_system_prompt = basic_system_prompt + "\n\n" + ONE_SHOT_EXAMPLE + "\n"
+    system_prompt_a_utilizar = one_shot_system_prompt
+    system_prompt = system_prompt_a_utilizar + "\n\n" + BANK_KB
 
-    user_prompt1 = "Cuál es la comisión de Cuenta Corriente ?"  # Pregunta con respuesta directa en la KB
-    user_prompt2 = "Que medicina debo tomar para un dolor de cabeza liviano ?" # Fuera del expertise
-    user_prompt3 = "Que productos de inversion tiene para ofrecer ?"  # No hay respuesta directa en la KB
-    user_prompt4 = "Cual es la rentabilidad anual en cuentas de money market ?"  # Consulta por producto que no ofrece
-    user_prompt = user_prompt3
+    # Obtener consulta del usuario::
+    match input_query:
+        case "1":
+            user_prompt = "Cuál es la comisión de Cuenta Corriente ?"  # Pregunta con respuesta directa en la KB
+        case "2":
+            user_prompt = "Que medicina debo tomar para un dolor de cabeza liviano ?" # Fuera del expertise
+        case "3":
+            user_prompt = "Que productos de inversion tiene para ofrecer ?"  # No hay respuesta directa en la KB
+        case "4":
+            user_prompt = "Cual es la rentabilidad anual en cuentas de money market ?"  # Consulta por producto que no ofrece
+        case _:
+             user_prompt = input_query
 
     print('=='*32)
-    print(f'Enviar solicitud al modelo:  {model.value}')
+    logger.info(f"Enviando consulta al modelo: {model.value}\nConsulta: {user_prompt}\n")
     json_response, metrics = get_completion(system_prompt, user_prompt, model, client)
     response_dict = {'metrics': asdict(metrics)}
     response_dict['consulta'] = user_prompt
@@ -116,8 +159,11 @@ def main() -> None:
         f.write(json.dumps(response_dict, indent=2))
 
     print('=='*32)
-    print(f'Consulta: { user_prompt}')
-    print(f'Respuesta del modelo: {json_response}')
+    # print(f'Consulta: { user_prompt}\n')
+    print(f'Respuesta del modelo: {json_response['respuesta']}\n\n')
+
+    logger.info(f"Consulta respondida. Tokens: {metrics.total_tokens}, Cost: {metrics.estimated_cost_usd},"
+                f"\nResultados en: {file_path}")
 
 if __name__ == "__main__":
     main()

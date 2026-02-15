@@ -1,0 +1,25 @@
+{
+  "metrics": {
+    "model": "gpt-5-mini",
+    "temperature": 2e-05,
+    "prompt_tokens": 964,
+    "completion_tokens": 1594,
+    "total_tokens": 2558,
+    "estimated_cost_usd": 0.0034,
+    "latency_seconds": 12.75,
+    "timestamp": "2026-02-15T19:11:54.781624",
+    "context": "SoporteCliente",
+    "output_path": "/Users/enriquegoyret/HenryCourses/ai_m1_project/LOGS"
+  },
+  "consulta": "Que productos ofrece el banco ?",
+  "respuesta": {
+    "respuesta": "El banco ofrece los siguientes productos y servicios: caja de ahorro (sin costo de mantenimiento e incluye tarjeta de d\u00e9bito); cuenta corriente (con comisi\u00f3n y posibilidad de descubierto seg\u00fan perfil, chequera opcional); tarjetas de d\u00e9bito (emitidas al abrir cuenta, se pueden bloquear desde la app) y tarjetas de cr\u00e9dito (l\u00edmite seg\u00fan scoring, cierre el d\u00eda 25, vencimiento d\u00eda 10); pr\u00e9stamos personales (hasta $5.000.000, tasa fija anual 45%, plazo 6\u201360 meses); plazos fijos (monto m\u00ednimo $10.000, plazo m\u00ednimo 30 d\u00edas, TNA 38%); transferencias nacionales e internacionales (nacionales se acreditan el mismo d\u00eda h\u00e1bil; internacionales demoran 2\u20135 d\u00edas y son solo desde sucursal); dep\u00f3sitos (efectivo en cajeros y cheques) y extracciones en cajeros; servicios digitales: home banking y token de seguridad; gesti\u00f3n de CBU/alias; bloqueo por robo/fraude; reclamos; cambio de datos y cierre de cuenta; y seguros opcionales (vida y hogar).",
+    "indicador_de_confianza": 1.0,
+    "acciones_recomendadas": [
+      "Contactar Atenci\u00f3n al Cliente (telef\u00f3nicamente en horario 8 a 20 hs) para consultas o contrataci\u00f3n.",
+      "Usar la app para gestionar alias, bloquear tarjetas, generar token, iniciar reclamos, cambiar email/tel\u00e9fono y solicitar cierre de cuenta.",
+      "Acercarse a sucursal para transferencias internacionales y para cambios que requieren validaci\u00f3n presencial (por ejemplo cambio de nombre).",
+      "Consultar condiciones espec\u00edficas (tasas, comisiones, montos y requisitos) antes de contratar pr\u00e9stamos, plazos fijos o cuenta corriente."
+    ]
+  }
+}

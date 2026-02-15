@@ -1,0 +1,24 @@
+{
+  "metrics": {
+    "model": "gpt-5-mini",
+    "temperature": 2e-05,
+    "prompt_tokens": 966,
+    "completion_tokens": 1382,
+    "total_tokens": 2348,
+    "estimated_cost_usd": 0.003,
+    "latency_seconds": 12.27,
+    "timestamp": "2026-02-15T11:28:02.227133",
+    "context": "SoporteCliente",
+    "output_path": "/Users/enriquegoyret/HenryCourses/ai_m1_project/LOGS"
+  },
+  "consulta": "Que productos de inversion tiene para ofrecer ?",
+  "respuesta": {
+    "respuesta": "Seg\u00fan la informaci\u00f3n disponible, los productos orientados a ahorro/inversi\u00f3n que ofrece el banco son:\n\n- Plazos Fijos: monto m\u00ednimo $10.000; plazo m\u00ednimo 30 d\u00edas; tasa nominal anual 38%; cancelaci\u00f3n anticipada no permitida.\n- Caja de Ahorro (producto para ahorro): sin costo de mantenimiento; incluye tarjeta de d\u00e9bito; permite transferencias ilimitadas.\n\nTambi\u00e9n est\u00e1n disponibles otros productos de cuenta (Cuenta Corriente) y seguros, pero los detalles de inversi\u00f3n se limitan a lo anterior en la base de conocimiento.",
+    "indicador_de_confianza": 0.9,
+    "acciones_recomendadas": [
+      "Consultar condiciones y contratar un Plazo Fijo en sucursal o contactando Atenci\u00f3n al Cliente (horario telef\u00f3nico 8 a 20 hs).",
+      "Abrir o usar una Caja de Ahorro para depositar y movilizar fondos (sin costo de mantenimiento).",
+      "Si necesita detalles adicionales, comunicarse con Atenci\u00f3n al Cliente para informaci\u00f3n espec\u00edfica."
+    ]
+  }
+}

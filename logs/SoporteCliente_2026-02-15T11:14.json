@@ -1,0 +1,24 @@
+{
+  "metrics": {
+    "model": "gpt-5-mini",
+    "temperature": 2e-05,
+    "prompt_tokens": 966,
+    "completion_tokens": 1077,
+    "total_tokens": 2043,
+    "estimated_cost_usd": 0.0024,
+    "latency_seconds": 9.3,
+    "timestamp": "2026-02-15T11:14:34.639197",
+    "context": "SoporteCliente",
+    "output_path": "/Users/enriquegoyret/HenryCourses/ai_m1_project/LOGS"
+  },
+  "consulta": "Que productos de inversion tiene para ofrecer ?",
+  "respuesta": {
+    "respuesta": "El producto de inversi\u00f3n disponible en la base de conocimiento es Plazos Fijos. Detalles: monto m\u00ednimo $10.000; plazo m\u00ednimo 30 d\u00edas; tasa nominal anual 38%; la cancelaci\u00f3n anticipada no est\u00e1 permitida. Como alternativa de ahorro (no espec\u00edficamente inversi\u00f3n) tambi\u00e9n existe la Caja de Ahorro: sin costo de mantenimiento, incluye tarjeta de d\u00e9bito y permite transferencias ilimitadas.",
+    "indicador_de_confianza": 0.9,
+    "acciones_recomendadas": [
+      "Consultar m\u00e1s detalles o contratar Plazo Fijo mediante Atenci\u00f3n al Cliente (tel\u00e9fono horario 8 a 20 hs).",
+      "Usar el chat disponible desde la app para consultas r\u00e1pidas.",
+      "Revisar Home Banking (disponible 24/7) para ver opciones relacionadas."
+    ]
+  }
+}

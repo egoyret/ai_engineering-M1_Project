@@ -1,0 +1,25 @@
+{
+  "metrics": {
+    "model": "gpt-5-mini",
+    "temperature": 2e-05,
+    "prompt_tokens": 966,
+    "completion_tokens": 1321,
+    "total_tokens": 2287,
+    "estimated_cost_usd": 0.0029,
+    "latency_seconds": 12.02,
+    "timestamp": "2026-02-15T11:36:33.190406",
+    "context": "SoporteCliente",
+    "output_path": "/Users/enriquegoyret/HenryCourses/ai_m1_project/LOGS"
+  },
+  "consulta": "Que productos de inversion tiene para ofrecer ?",
+  "respuesta": {
+    "respuesta": "Seg\u00fan la base de conocimiento, los productos de inversi\u00f3n disponibles son:\n\n- Plazos Fijos: monto m\u00ednimo $10.000; plazo m\u00ednimo 30 d\u00edas; tasa nominal anual 38%; cancelaci\u00f3n anticipada no permitida.\n\n- Caja de Ahorro (opci\u00f3n de ahorro l\u00edquido): sin costo de mantenimiento; incluye tarjeta de d\u00e9bito; permite transferencias ilimitadas.\n\nNo hay en la base informaci\u00f3n sobre otros productos de inversi\u00f3n (fondos de inversi\u00f3n, bonos, acciones u otros).",
+    "indicador_de_confianza": 1.0,
+    "acciones_recomendadas": [
+      "Evaluar abrir un Plazo Fijo teniendo en cuenta monto m\u00ednimo $10.000 y plazo m\u00ednimo 30 d\u00edas",
+      "Usar una Caja de Ahorro para manejo y disponibilidad de fondos (sin costo de mantenimiento)",
+      "Consultar m\u00e1s detalles o gesti\u00f3n con Atenci\u00f3n al Cliente (tel\u00e9fono 8 a 20 hs)",
+      "Acceder a Home Banking (disponible 24/7) para gestionar cuentas y movimientos"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "metrics": {
+    "model": "gpt-5-mini",
+    "temperature": 2e-05,
+    "prompt_tokens": 966,
+    "completion_tokens": 1140,
+    "total_tokens": 2106,
+    "estimated_cost_usd": 0.0025,
+    "latency_seconds": 9.19,
+    "timestamp": "2026-02-15T11:19:09.656250",
+    "context": "SoporteCliente",
+    "output_path": "/Users/enriquegoyret/HenryCourses/ai_m1_project/LOGS"
+  },
+  "consulta": "Que productos de inversion tiene para ofrecer ?",
+  "respuesta": {
+    "respuesta": "Productos de inversi\u00f3n disponibles seg\u00fan nuestra base de conocimiento:\n\n- Plazos Fijos: Monto m\u00ednimo $10.000; plazo m\u00ednimo 30 d\u00edas; tasa nominal anual 38%; cancelaci\u00f3n anticipada no permitida.\n- Caja de Ahorro: Sin costo de mantenimiento; incluye tarjeta de d\u00e9bito; permite transferencias ilimitadas.",
+    "indicador_de_confianza": 1.0,
+    "acciones_recomendadas": [
+      "Consultar detalles y contratar el producto por tel\u00e9fono con Atenci\u00f3n al Cliente (horario telef\u00f3nico: 8 a 20 hs).",
+      "Ir a una sucursal para recibir atenci\u00f3n personalizada y gestionar la contrataci\u00f3n.",
+      "Consultar y operar desde Home Banking (disponible 24/7, requiere usuario y clave) para ver informaci\u00f3n de su cuenta."
+    ]
+  }
+}

@@ -41,7 +41,7 @@ class ColorFormatter(logging.Formatter):
         return f"{color}{plain}{RESET}"
 
 
-def get_logger(name: str = "brief_builder") -> logging.Logger:
+def get_logger(name: str = "Soporte al Cliente") -> logging.Logger:
     """Creates or retrieves a logger with colored console output.
 
     Configures a logger with:
@@ -60,7 +60,7 @@ def get_logger(name: str = "brief_builder") -> logging.Logger:
 
     Examples:
         >>> logger = get_logger()
-        >>> logger.info("Starting brief generation")
+        >>> logger.info("Starting generation")
         # Outputs colored log to console
     """
     logger = logging.getLogger(name)

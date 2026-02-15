@@ -1,0 +1,24 @@
+{
+  "metrics": {
+    "model": "gpt-5-mini",
+    "temperature": 2e-05,
+    "prompt_tokens": 966,
+    "completion_tokens": 1780,
+    "total_tokens": 2746,
+    "estimated_cost_usd": 0.0038,
+    "latency_seconds": 17.07,
+    "timestamp": "2026-02-15T11:10:01.380810",
+    "context": "SoporteCliente",
+    "output_path": "/Users/enriquegoyret/HenryCourses/ai_m1_project/LOGS"
+  },
+  "consulta": "Que productos de inversion tiene para ofrecer ?",
+  "respuesta": {
+    "respuesta": "Seg\u00fan la base de conocimiento, los productos de inversi\u00f3n disponibles son:\n\n1) Plazos Fijos: monto m\u00ednimo $10.000; plazo m\u00ednimo 30 d\u00edas; tasa nominal anual 38%; cancelaci\u00f3n anticipada no permitida.\n\n2) Caja de Ahorro (producto de ahorro): sin costo de mantenimiento; incluye tarjeta de d\u00e9bito; permite transferencias ilimitadas.\n\nNo hay otros productos de inversi\u00f3n detallados en la base de conocimiento.",
+    "indicador_de_confianza": 1.0,
+    "acciones_recomendadas": [
+      "Ofrecer Plazo Fijo: informar monto m\u00ednimo ($10.000), plazo m\u00ednimo (30 d\u00edas), tasa nominal anual (38%) y que no permite cancelaci\u00f3n anticipada.",
+      "Ofrecer Caja de Ahorro: destacar que no tiene costo de mantenimiento, que incluye tarjeta de d\u00e9bito y permite transferencias ilimitadas.",
+      "Verificar y explicar opciones de dep\u00f3sito para fondear inversiones: dep\u00f3sitos en efectivo por cajeros (acreditaci\u00f3n inmediata) o cheques (acreditaci\u00f3n en 48 horas h\u00e1biles)."
+    ]
+  }
+}

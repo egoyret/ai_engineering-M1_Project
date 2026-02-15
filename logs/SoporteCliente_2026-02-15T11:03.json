@@ -1,0 +1,24 @@
+{
+  "metrics": {
+    "model": "gpt-5-mini",
+    "temperature": 2e-05,
+    "prompt_tokens": 966,
+    "completion_tokens": 1490,
+    "total_tokens": 2456,
+    "estimated_cost_usd": 0.0032,
+    "latency_seconds": 15.14,
+    "timestamp": "2026-02-15T11:03:24.825392",
+    "context": "SoporteCliente",
+    "output_path": "/Users/enriquegoyret/HenryCourses/ai_m1_project/LOGS"
+  },
+  "consulta": "Que productos de inversion tiene para ofrecer ?",
+  "respuesta": {
+    "respuesta": "En la base de conocimiento figura como producto de inversi\u00f3n el Plazo Fijo: monto m\u00ednimo $10.000; plazo m\u00ednimo 30 d\u00edas; tasa nominal anual 38%; cancelaci\u00f3n anticipada no permitida. Adem\u00e1s, como producto de ahorro disponible est\u00e1 la Caja de Ahorro (sin costo de mantenimiento, incluye tarjeta de d\u00e9bito y permite transferencias ilimitadas). No hay en la base informaci\u00f3n sobre otros productos de inversi\u00f3n.",
+    "indicador_de_confianza": 0.9,
+    "acciones_recomendadas": [
+      "Consultar condiciones y contrataci\u00f3n del Plazo Fijo (monto, plazo y tasa) mediante Atenci\u00f3n al Cliente: horario telef\u00f3nico 8 a 20 hs.",
+      "Revisar opciones disponibles y operar desde Home Banking (disponible 24/7).",
+      "Verificar requisitos para el Plazo Fijo: monto m\u00ednimo $10.000, plazo m\u00ednimo 30 d\u00edas, TNA 38%."
+    ]
+  }
+}

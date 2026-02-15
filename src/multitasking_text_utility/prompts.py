@@ -15,3 +15,13 @@ Responde SIEMPRE en formato JSON válido con la siguiente estructura:
 No agregues texto fuera del JSON.
 
 """
+
+ONE_SHOT_EXAMPLE = """
+EJEMPLO DE ESTRUCTURA DE RESPUESTA:
+
+Según la información disponible, los productos orientados a ahorro/inversión que ofrece el banco son:
+
+- Plazos Fijos: monto mínimo $10.000; plazo mínimo 30 días; tasa nominal anual 38%; cancelación anticipada no permitida.
+- Caja de Ahorro (producto para ahorro): sin costo de mantenimiento; incluye tarjeta de débito; permite transferencias ilimitadas.
+
+"""

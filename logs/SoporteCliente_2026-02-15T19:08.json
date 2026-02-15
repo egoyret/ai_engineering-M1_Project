@@ -1,0 +1,26 @@
+{
+  "metrics": {
+    "model": "gpt-5-mini",
+    "temperature": 2e-05,
+    "prompt_tokens": 1058,
+    "completion_tokens": 1483,
+    "total_tokens": 2541,
+    "estimated_cost_usd": 0.0032,
+    "latency_seconds": 13.37,
+    "timestamp": "2026-02-15T19:08:27.217002",
+    "context": "SoporteCliente",
+    "output_path": "/Users/enriquegoyret/HenryCourses/ai_m1_project/LOGS"
+  },
+  "consulta": "Que productos ofrece el banco ?",
+  "respuesta": {
+    "respuesta": "Seg\u00fan la informaci\u00f3n disponible, los productos y servicios que ofrece el banco son:\n\n- Cuentas:\n  - Caja de Ahorro: sin costo de mantenimiento; incluye tarjeta de d\u00e9bito; permite transferencias ilimitadas.\n  - Cuenta Corriente: comisi\u00f3n $8.000; permite descubierto seg\u00fan perfil; chequera opcional con costo adicional.\n\n- Plazos Fijos:\n  - Monto m\u00ednimo $10.000; plazo m\u00ednimo 30 d\u00edas; tasa nominal anual 38%; cancelaci\u00f3n anticipada no permitida.\n\n- Tarjetas:\n  - Tarjeta de D\u00e9bito: se emiten autom\u00e1ticamente al abrir una cuenta; se pueden bloquear desde la app; reposici\u00f3n por p\u00e9rdida 7 d\u00edas h\u00e1biles.\n  - Tarjeta de Cr\u00e9dito: l\u00edmite asignado seg\u00fan scoring interno; cierre mensual d\u00eda 25; vencimiento d\u00eda 10 del mes siguiente.\n\n- Pr\u00e9stamos Personales:\n  - Monto m\u00e1ximo $5.000.000; tasa fija anual 45%; plazo 6 a 60 meses; acreditaci\u00f3n en 24 horas.\n\n- Transferencias y medios de pago:\n  - Transferencias Nacionales: acreditan el mismo d\u00eda h\u00e1bil; horario de corte 18:00; monto m\u00e1ximo diario $2.000.000.\n  - Transferencias Internacionales: demoran 2\u20135 d\u00edas h\u00e1biles; comisi\u00f3n 1.5% (m\u00ednimo USD 25); disponibles solo desde sucursal.\n  - CBU/Alias: CBU de 22 d\u00edgitos; alias modificable desde la app; el CBU no se puede cambiar.\n\n- Operaciones y seguridad digital:\n  - Home Banking: disponible 24/7; requiere usuario y clave.\n  - Token de Seguridad: obligatorio para transferencias mayores a $50.000; se genera desde la app; validez 60 segundos.\n  - Bloqueo por robo/fraude: puede realizarse 24/7 desde la app o call center; se genera pl\u00e1stico nuevo sin costo.\n\n- Otros servicios:\n  - Extracciones en cajeros: l\u00edmite diario $200.000; en cajeros propios sin comisi\u00f3n; en otras redes comisi\u00f3n 1%.\n  - Dep\u00f3sitos: en efectivo desde cajeros autom\u00e1ticos con acreditaci\u00f3n inmediata; cheques acreditan en 48 horas h\u00e1biles.\n  - Seguros: seguro de vida y seguro de hogar opcionales (con d\u00e9bito autom\u00e1tico mensual).\n  - Reclamos: se inician desde la app o sucursal; tiempo de respuesta hasta 72 horas h\u00e1biles; se entrega n\u00famero de gesti\u00f3n.\n  - Cambio de datos: email y tel\u00e9fono desde la app; cambio de domicilio requiere validaci\u00f3n; cambio de nombre solo en sucursal.\n  - Cierre de cuenta: puede solicitarse desde la app; la cuenta no debe tener saldo pendiente; confirmaci\u00f3n en 48 horas h\u00e1biles.\n\nSi desea informaci\u00f3n m\u00e1s detallada sobre alg\u00fan producto en particular, ind\u00edquelo y le doy los datos disponibles.",
+    "indicador_de_confianza": 0.95,
+    "acciones_recomendadas": [
+      "Consultar la app o Home Banking para gestionar CBU/alias, token y operaciones 24/7.",
+      "Para transferencias internacionales, acudir a una sucursal.",
+      "Bloquear tarjeta inmediatamente desde la app o el call center en caso de p\u00e9rdida o fraude.",
+      "Iniciar reclamos desde la app o una sucursal (respuesta hasta 72 horas h\u00e1biles).",
+      "Consultar en la sucursal detalles sobre cuenta corriente (descubierto y chequera) si le interesa ese producto."
+    ]
+  }
+}

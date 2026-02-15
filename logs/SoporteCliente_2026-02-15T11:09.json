@@ -1,0 +1,23 @@
+{
+  "metrics": {
+    "model": "gpt-5-mini",
+    "temperature": 2e-05,
+    "prompt_tokens": 966,
+    "completion_tokens": 1916,
+    "total_tokens": 2882,
+    "estimated_cost_usd": 0.0041,
+    "latency_seconds": 21.28,
+    "timestamp": "2026-02-15T11:09:38.481966",
+    "context": "SoporteCliente",
+    "output_path": "/Users/enriquegoyret/HenryCourses/ai_m1_project/LOGS"
+  },
+  "consulta": "Que productos de inversion tiene para ofrecer ?",
+  "respuesta": {
+    "respuesta": "Nuestros productos de inversi\u00f3n disponibles en la base son: Plazos Fijos \u2014 monto m\u00ednimo $10.000, plazo m\u00ednimo 30 d\u00edas, tasa nominal anual 38%, y no permite cancelaci\u00f3n anticipada. Como producto de ahorro disponible que puede utilizarse para guardar fondos: Caja de Ahorro \u2014 sin costo de mantenimiento, incluye tarjeta de d\u00e9bito y permite transferencias ilimitadas.",
+    "indicador_de_confianza": 0.95,
+    "acciones_recomendadas": [
+      "Informar al cliente las condiciones del Plazo Fijo: monto m\u00ednimo $10.000; plazo m\u00ednimo 30 d\u00edas; TNA 38%; cancelaci\u00f3n anticipada no permitida.",
+      "Informar al cliente las caracter\u00edsticas de la Caja de Ahorro: sin costo de mantenimiento; incluye tarjeta de d\u00e9bito; permite transferencias ilimitadas."
+    ]
+  }
+}
