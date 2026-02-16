@@ -1,0 +1,23 @@
+{
+  "metrics": {
+    "model": "gpt-5-mini",
+    "temperature": 0.0,
+    "prompt_tokens": 1061,
+    "completion_tokens": 1005,
+    "total_tokens": 2066,
+    "estimated_cost_usd": 0.0023,
+    "latency_seconds": 11.63,
+    "timestamp": "2026-02-16T17:02:34.933445",
+    "context": "SoporteCliente",
+    "output_path": "/Users/enriquegoyret/HenryCourses/ai_m1_project/LOGS"
+  },
+  "consulta": "Cu\u00e1l es la comisi\u00f3n de Cuenta Corriente ?",
+  "respuesta": {
+    "respuesta": "La comisi\u00f3n de la Cuenta Corriente es $8.000. Adem\u00e1s, la cuenta permite descubierto seg\u00fan perfil y la chequera es opcional con costo adicional.",
+    "indicador_de_confianza": 1.0,
+    "acciones_recomendadas": [
+      "Consultar detalles de la cuenta en Home Banking (disponible 24/7).",
+      "Contactar Atenci\u00f3n al Cliente por tel\u00e9fono de 8 a 20 hs si necesita m\u00e1s informaci\u00f3n."
+    ]
+  }
+}

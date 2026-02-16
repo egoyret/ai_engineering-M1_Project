@@ -27,6 +27,9 @@ OPENAI_API_KEY=sk-...
 ```bash
 Desde el root del proyecto:
 python src/multitasking_text_utility/run_query.py
+
+O también:
+make run-project
 ```
 
 ## Input de la consulta
@@ -48,6 +51,30 @@ El asistente responde con un print en la consola con la consulta, la respuesta, 
 
 El nombre del archivo esta versionado con un timestamp a efectos de preservarlo y poder compararlos entre si.
 
-Estructura del proyecto:
+## Tests
+Para ejecutar los tests:
+```bash
+pytest
 
-root
+O también:
+make test-se
+```
+
+## Estructura del proyecto:
+
+```
+ai_engineering/
+├── logs/
+│   ├── SoporteCliente_yyyy-mm-dd_hh-mm-ss.json  # Outputs del asistente
+├── reports/
+│   ├── report1.md                               # Informe final
+├── src/
+│   ├── run_query.py                             # Script principal ejecutable
+│   ├── metrics.py                               # Dataclass de metrics
+│   ├── prompts.py                               # System prompts
+│   ├── bank_kb.py                               # base de conocimientos del banco
+│   └── logger.py                                # Logs coloreados para debugging
+└── tests/
+    └── test_run_query.py                        # test unitario (con mocks)
+
+```
