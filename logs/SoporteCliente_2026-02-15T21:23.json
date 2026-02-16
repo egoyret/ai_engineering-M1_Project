@@ -1,0 +1,24 @@
+{
+  "metrics": {
+    "model": "gpt-5-mini",
+    "temperature": 0.0,
+    "prompt_tokens": 1065,
+    "completion_tokens": 890,
+    "total_tokens": 1955,
+    "estimated_cost_usd": 0.002,
+    "latency_seconds": 6.73,
+    "timestamp": "2026-02-15T21:23:25.164124",
+    "context": "SoporteCliente",
+    "output_path": "/Users/enriquegoyret/HenryCourses/ai_m1_project/LOGS"
+  },
+  "consulta": "Cual es la rentabilidad anual en cuentas de money market ?",
+  "respuesta": {
+    "respuesta": "La informaci\u00f3n sobre la rentabilidad anual de cuentas 'money market' no figura en la base de conocimiento proporcionada. No puedo brindar un porcentaje o detalle al respecto.",
+    "indicador_de_confianza": 1.0,
+    "acciones_recomendadas": [
+      "Contactar Atenci\u00f3n al Cliente (horario telef\u00f3nico 8 a 20 hs) para consultar la informaci\u00f3n espec\u00edfica.",
+      "Consultar mediante el chat disponible en la app.",
+      "Acercarse a una sucursal para solicitar detalles sobre productos de inversi\u00f3n."
+    ]
+  }
+}

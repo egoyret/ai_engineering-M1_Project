@@ -61,7 +61,7 @@ class OpenAIModels(str,Enum): # Str -> Para que los valores sean cadenas de text
 def get_completion(system_prompt: str, # Define el comportamiento del modelo
                    user_prompt: str,  # Es ;la solicitud del usuario
                    model: str, client,
-                   temperature: float = 0.00002, context: str | None = APPLICATION_NAME):
+                   temperature: float | None = 0.0, context: str | None = APPLICATION_NAME):
 
     # Construcción de los mensajes
     messages = [
@@ -74,8 +74,7 @@ def get_completion(system_prompt: str, # Define el comportamiento del modelo
         # LLamado a la API de OpenAI
         response = client.chat.completions.create(
             model=model,
-            messages=messages,
-            temperature=temperature,
+            messages=messages
         )
         latency = (time.time() - start_time)
         content = response.choices[0].message.content
@@ -148,7 +147,7 @@ def main() -> None:
              user_prompt = input_query
 
     print('=='*32)
-    logger.info(f"Enviando consulta al modelo: {model.value}\nConsulta: {user_prompt}\n")
+    logger.info(f"Enviando consulta al modelo: {model.value}\nConsulta: {user_prompt}")
     json_response, metrics = get_completion(system_prompt, user_prompt, model, client)
     response_dict = {'metrics': asdict(metrics)}
     response_dict['consulta'] = user_prompt
@@ -160,7 +159,7 @@ def main() -> None:
 
     print('=='*32)
     # print(f'Consulta: { user_prompt}\n')
-    print(f'Respuesta del modelo: {json_response['respuesta']}\n\n')
+    print(f'Respuesta del modelo: {json_response['respuesta']}\n')
 
     logger.info(f"Consulta respondida. Tokens: {metrics.total_tokens}, Cost: {metrics.estimated_cost_usd},"
                 f"\nResultados en: {file_path}")
