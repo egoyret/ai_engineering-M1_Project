@@ -1,0 +1,20 @@
+{
+  "metrics": {
+    "model": "gpt-5-mini",
+    "temperature": 0.0,
+    "prompt_tokens": 1064,
+    "completion_tokens": 513,
+    "total_tokens": 1577,
+    "estimated_cost_usd": 0.0013,
+    "latency_seconds": 9.03,
+    "timestamp": "2026-02-16T14:53:21.457461",
+    "context": "SoporteCliente",
+    "output_path": "/Users/enriquegoyret/HenryCourses/ai_m1_project/LOGS"
+  },
+  "consulta": "Que medicina debo tomar para un dolor de cabeza liviano ?",
+  "respuesta": {
+    "respuesta": "Lo siento, la informaci\u00f3n solicitada (recomendaciones de medicamentos para un dolor de cabeza) no est\u00e1 disponible en la base de conocimiento del banco. No contamos con datos m\u00e9dicos ni recomendaciones farmacol\u00f3gicas.",
+    "indicador_de_confianza": 0.0,
+    "acciones_recomendadas": []
+  }
+}

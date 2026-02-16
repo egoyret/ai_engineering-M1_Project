@@ -1,0 +1,24 @@
+{
+  "metrics": {
+    "model": "gpt-5-mini",
+    "temperature": 0.0,
+    "prompt_tokens": 1061,
+    "completion_tokens": 1022,
+    "total_tokens": 2083,
+    "estimated_cost_usd": 0.0023,
+    "latency_seconds": 11.8,
+    "timestamp": "2026-02-16T15:07:57.905344",
+    "context": "SoporteCliente",
+    "output_path": "/Users/enriquegoyret/HenryCourses/ai_m1_project/LOGS"
+  },
+  "consulta": "Cu\u00e1l es la comisi\u00f3n de Cuenta Corriente ?",
+  "respuesta": {
+    "respuesta": "La comisi\u00f3n de cuenta corriente es $8.000. Tambi\u00e9n: la cuenta permite descubierto seg\u00fan perfil y la chequera es opcional con costo adicional.",
+    "indicador_de_confianza": 1.0,
+    "acciones_recomendadas": [
+      "Consultar en la app o Home Banking para ver detalles de su cuenta.",
+      "Contactar a Atenci\u00f3n al Cliente (horario telef\u00f3nico 8 a 20 hs) para consultas adicionales.",
+      "Si corresponde, solicitar cierre de cuenta desde la app (no debe tener saldo pendiente)."
+    ]
+  }
+}

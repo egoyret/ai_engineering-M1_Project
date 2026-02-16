@@ -35,6 +35,7 @@ Los pasos del script son los siguientes:
 import time
 import json
 import os
+import sys
 from datetime import datetime
 from pathlib import Path
 from openai import OpenAI
@@ -48,6 +49,8 @@ from metrics import Metrics, calculate_cost
 
 # Obtener el root del proyecto
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+
 METRICS_LOG_FOLDER = PROJECT_ROOT / "LOGS"
 APPLICATION_NAME = "SoporteCliente"
 

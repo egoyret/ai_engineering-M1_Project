@@ -1,0 +1,24 @@
+{
+  "metrics": {
+    "model": "gpt-5-mini",
+    "temperature": 0.0,
+    "prompt_tokens": 1061,
+    "completion_tokens": 633,
+    "total_tokens": 1694,
+    "estimated_cost_usd": 0.0015,
+    "latency_seconds": 9.0,
+    "timestamp": "2026-02-16T15:28:54.248109",
+    "context": "SoporteCliente",
+    "output_path": "/Users/enriquegoyret/HenryCourses/ai_m1_project/LOGS"
+  },
+  "consulta": "Cu\u00e1l es la comisi\u00f3n de Cuenta Corriente ?",
+  "respuesta": {
+    "respuesta": "La comisi\u00f3n de cuenta corriente es $8.000.",
+    "indicador_de_confianza": 1.0,
+    "acciones_recomendadas": [
+      "Consultar detalles y movimientos en Home Banking (disponible 24/7, requiere usuario y clave).",
+      "Contactar Atenci\u00f3n al Cliente en el horario telef\u00f3nico 8 a 20 hs para consultas adicionales.",
+      "Acercarse a una sucursal si desea m\u00e1s informaci\u00f3n o contratar una chequera (chequera opcional con costo adicional)."
+    ]
+  }
+}

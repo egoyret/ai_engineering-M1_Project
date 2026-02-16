@@ -35,9 +35,7 @@ package = false
 
 [tool.pytest.ini_options]
 testpaths = [
-    "01-introduction/ai_engineering/tests",
-    "01-introduction/python_software_engineering/tests",
-    "05_project/tests",
+    "tests",
 ]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
@@ -45,8 +43,6 @@ python_functions = ["test_*"]
 addopts = [
     "-v",
     "--strict-markers",
-    "--cov=01-introduction",
-    "--cov=05_project/src",
     "--cov-report=term-missing",
     "--cov-report=html",
 ]
